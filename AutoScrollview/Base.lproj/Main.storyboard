@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoScrollview" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,154 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8e-wl-yTp">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltw-0C-HI2" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1jP-Go-ZoN" userLabel="Middle Name Input">
+                                                <rect key="frame" x="20" y="58" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" label="Last Name"/>
+                                                <color key="textColor" red="0.2901960784" green="0.30588235289999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GRj-1V-vsl"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sry-Sm-kIj" userLabel="Last Name Input">
+                                                <rect key="frame" x="20" y="96" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" label="Last Name"/>
+                                                <color key="textColor" red="0.2901960784" green="0.30588235289999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eRs-JU-3OV"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ltz-FK-4Vj" userLabel="Email Input">
+                                                <rect key="frame" x="20" y="134" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" label="Email"/>
+                                                <color key="textColor" red="0.2901960784" green="0.30588235289999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ji0-qu-8xi"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EHp-Mw-1uJ" userLabel="Password Input">
+                                                <rect key="frame" x="20" y="172" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Password must be at least 6 characters" label="Password"/>
+                                                <color key="textColor" red="0.2901960784" green="0.30588235289999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UHG-rV-t0z"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sgl-Je-dQr" userLabel="Password Confirmation Input">
+                                                <rect key="frame" x="20" y="212" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Password must be at least 6 characters" label="Password"/>
+                                                <color key="textColor" red="0.2901960784" green="0.30588235289999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nXt-IY-2h0"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fln-cD-gOX">
+                                                <rect key="frame" x="185" y="250" width="229" height="30"/>
+                                                <animations/>
+                                                <accessibility key="accessibilityConfiguration" label="Terms of Service &amp; Privacy Policy"/>
+                                                <state key="normal" title="Terms of Service &amp; Privacy Policy">
+                                                    <color key="titleColor" red="0.32549019610000002" green="0.3411764706" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsD-k4-1Vh">
+                                                <rect key="frame" x="20" y="20" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBa-L0-pxm">
+                                                <rect key="frame" x="20" y="306" width="560" height="34"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Register"/>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.89563607119999999" green="0.93831884990000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Sgl-Je-dQr" firstAttribute="centerX" secondItem="Ltw-0C-HI2" secondAttribute="centerX" id="1MI-Yk-Dqk"/>
+                                            <constraint firstItem="CBa-L0-pxm" firstAttribute="top" secondItem="fln-cD-gOX" secondAttribute="bottom" constant="26" id="4no-GR-RNH"/>
+                                            <constraint firstItem="EHp-Mw-1uJ" firstAttribute="width" secondItem="ltz-FK-4Vj" secondAttribute="width" id="CaY-16-eiD"/>
+                                            <constraint firstItem="Sry-Sm-kIj" firstAttribute="top" secondItem="1jP-Go-ZoN" secondAttribute="bottom" constant="8" id="DNc-60-zZ0"/>
+                                            <constraint firstItem="1jP-Go-ZoN" firstAttribute="top" secondItem="GsD-k4-1Vh" secondAttribute="bottom" constant="8" symbolic="YES" id="Jto-fu-w9D"/>
+                                            <constraint firstAttribute="bottom" secondItem="CBa-L0-pxm" secondAttribute="bottom" constant="20" id="LHd-nh-9W2"/>
+                                            <constraint firstItem="Sgl-Je-dQr" firstAttribute="width" secondItem="EHp-Mw-1uJ" secondAttribute="width" id="Oa0-6I-Vj8"/>
+                                            <constraint firstAttribute="trailing" secondItem="GsD-k4-1Vh" secondAttribute="trailing" constant="20" symbolic="YES" id="Ppk-Ek-yJC"/>
+                                            <constraint firstItem="CBa-L0-pxm" firstAttribute="width" secondItem="Sgl-Je-dQr" secondAttribute="width" id="QXA-pr-bJi"/>
+                                            <constraint firstItem="Sry-Sm-kIj" firstAttribute="width" secondItem="1jP-Go-ZoN" secondAttribute="width" id="Rs6-Zx-Uh2"/>
+                                            <constraint firstItem="Sry-Sm-kIj" firstAttribute="centerX" secondItem="Ltw-0C-HI2" secondAttribute="centerX" id="SXE-5h-KeC"/>
+                                            <constraint firstItem="EHp-Mw-1uJ" firstAttribute="centerX" secondItem="Ltw-0C-HI2" secondAttribute="centerX" id="Ycz-Ns-ogF"/>
+                                            <constraint firstItem="ltz-FK-4Vj" firstAttribute="width" secondItem="Sry-Sm-kIj" secondAttribute="width" id="aEa-VO-gCY"/>
+                                            <constraint firstItem="CBa-L0-pxm" firstAttribute="centerX" secondItem="Ltw-0C-HI2" secondAttribute="centerX" id="cic-0x-0yl"/>
+                                            <constraint firstItem="fln-cD-gOX" firstAttribute="top" secondItem="Sgl-Je-dQr" secondAttribute="bottom" constant="8" symbolic="YES" id="dqr-Cg-7NL"/>
+                                            <constraint firstItem="fln-cD-gOX" firstAttribute="centerX" secondItem="Ltw-0C-HI2" secondAttribute="centerX" id="fdm-b7-KUW"/>
+                                            <constraint firstItem="GsD-k4-1Vh" firstAttribute="top" secondItem="Ltw-0C-HI2" secondAttribute="top" constant="20" symbolic="YES" id="iIF-df-FXd"/>
+                                            <constraint firstAttribute="trailing" secondItem="1jP-Go-ZoN" secondAttribute="trailing" constant="20" symbolic="YES" id="kVy-XC-MGr"/>
+                                            <constraint firstItem="Sgl-Je-dQr" firstAttribute="top" secondItem="EHp-Mw-1uJ" secondAttribute="bottom" constant="10" id="ldc-Bc-9s9"/>
+                                            <constraint firstItem="EHp-Mw-1uJ" firstAttribute="top" secondItem="ltz-FK-4Vj" secondAttribute="bottom" constant="8" id="p7a-db-P3u"/>
+                                            <constraint firstItem="1jP-Go-ZoN" firstAttribute="leading" secondItem="Ltw-0C-HI2" secondAttribute="leading" constant="20" symbolic="YES" id="qOo-5a-T5n"/>
+                                            <constraint firstItem="ltz-FK-4Vj" firstAttribute="centerX" secondItem="Ltw-0C-HI2" secondAttribute="centerX" id="tCL-nO-usQ"/>
+                                            <constraint firstItem="GsD-k4-1Vh" firstAttribute="leading" secondItem="Ltw-0C-HI2" secondAttribute="leading" constant="20" symbolic="YES" id="vsJ-5v-qzp"/>
+                                            <constraint firstItem="ltz-FK-4Vj" firstAttribute="top" secondItem="Sry-Sm-kIj" secondAttribute="bottom" constant="8" id="yIi-s2-h5G"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.98613109170000002" blue="0.64984704869999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ltw-0C-HI2" firstAttribute="leading" secondItem="z8e-wl-yTp" secondAttribute="leading" id="7I8-zR-zW7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ltw-0C-HI2" secondAttribute="bottom" id="XR6-vK-IhO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ltw-0C-HI2" secondAttribute="trailing" id="jQP-l7-rVU"/>
+                                    <constraint firstItem="Ltw-0C-HI2" firstAttribute="top" secondItem="z8e-wl-yTp" secondAttribute="top" id="uyj-4x-ENB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="z8e-wl-yTp" secondAttribute="trailing" id="fca-E3-wEY"/>
+                            <constraint firstAttribute="bottom" secondItem="z8e-wl-yTp" secondAttribute="bottom" id="hY8-cS-ild"/>
+                            <constraint firstItem="z8e-wl-yTp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="peh-xj-YRU"/>
+                            <constraint firstItem="Ltw-0C-HI2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="u7v-Kv-suH"/>
+                            <constraint firstItem="z8e-wl-yTp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yBg-bX-n6Z"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="Ltw-0C-HI2" id="xbo-uG-g5J"/>
+                        <outlet property="scrollView" destination="z8e-wl-yTp" id="Tb0-Cn-jHU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="375"/>
         </scene>
     </scenes>
 </document>
