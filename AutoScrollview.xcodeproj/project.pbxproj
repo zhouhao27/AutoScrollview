@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3830A9881B8DF17E00DCA2F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830A9871B8DF17E00DCA2F6 /* AppDelegate.swift */; };
-		3830A98A1B8DF17E00DCA2F6 /* AutolayoutScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830A9891B8DF17E00DCA2F6 /* AutolayoutScrollViewController.swift */; };
+		3830A98A1B8DF17E00DCA2F6 /* WOWAutolayoutScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830A9891B8DF17E00DCA2F6 /* WOWAutolayoutScrollViewController.swift */; };
 		3830A98D1B8DF17E00DCA2F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3830A98B1B8DF17E00DCA2F6 /* Main.storyboard */; };
 		3830A98F1B8DF17E00DCA2F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3830A98E1B8DF17E00DCA2F6 /* Assets.xcassets */; };
 		3830A9921B8DF17E00DCA2F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3830A9901B8DF17E00DCA2F6 /* LaunchScreen.storyboard */; };
@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		3830A9841B8DF17E00DCA2F6 /* AutoScrollview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoScrollview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3830A9871B8DF17E00DCA2F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3830A9891B8DF17E00DCA2F6 /* AutolayoutScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolayoutScrollViewController.swift; sourceTree = "<group>"; };
+		3830A9891B8DF17E00DCA2F6 /* WOWAutolayoutScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOWAutolayoutScrollViewController.swift; sourceTree = "<group>"; };
 		3830A98C1B8DF17E00DCA2F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3830A98E1B8DF17E00DCA2F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3830A9911B8DF17E00DCA2F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				3830A9871B8DF17E00DCA2F6 /* AppDelegate.swift */,
-				3830A9891B8DF17E00DCA2F6 /* AutolayoutScrollViewController.swift */,
+				3830A9891B8DF17E00DCA2F6 /* WOWAutolayoutScrollViewController.swift */,
 				3830A98B1B8DF17E00DCA2F6 /* Main.storyboard */,
 				3830A98E1B8DF17E00DCA2F6 /* Assets.xcassets */,
 				3830A9901B8DF17E00DCA2F6 /* LaunchScreen.storyboard */,
@@ -200,7 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3830A9A81B8E11D300DCA2F6 /* ViewController.swift in Sources */,
-				3830A98A1B8DF17E00DCA2F6 /* AutolayoutScrollViewController.swift in Sources */,
+				3830A98A1B8DF17E00DCA2F6 /* WOWAutolayoutScrollViewController.swift in Sources */,
 				3830A9881B8DF17E00DCA2F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +389,7 @@
 				3830A9A31B8DF17E00DCA2F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3830A9A41B8DF17E00DCA2F6 /* Build configuration list for PBXNativeTarget "AutoScrollviewTests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +398,7 @@
 				3830A9A61B8DF17E00DCA2F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,8 @@
 //
-//  AutolayoutScrollViewController.swift
+//  WOWAutolayoutScrollViewController.swift
 //  AutoScrollview
+//
+//  The View Controller must includes a UIScrollView and a ContentView inside the scroll view
 //
 //  Procedures to create Autolayout for UIScrollView:
 //  1. Create top, bottom, trailing, leading constraints for UIScrollView
@@ -18,7 +20,7 @@
 
 import UIKit
 
-class AutolayoutScrollViewController: UIViewController {
+class WOWAutolayoutScrollViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
@@ -34,7 +36,8 @@ class AutolayoutScrollViewController: UIViewController {
     }
 
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardDidShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)        
     }
     
     func textFieldShouldReturn(textField : UITextField) -> Bool {
